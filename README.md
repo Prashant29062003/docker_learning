@@ -1,4 +1,4 @@
-Docker define
+# Docker Notes
 
 **Docker is an open-source containerization platform** that allows developers to package applications and all their dependencies into lightweight, portable, and isolated units called **containers**. These containers ensure that software runs consistently across different environments, from development machines to cloud servers, by sharing the host operating system kernel rather than running a separate guest OS.
 
