@@ -1,0 +1,19 @@
+# Use an official image of Node.js runtime
+FROM node:24-alpine
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy all package.json file in the working directory
+COPY package*.json ./
+
+# install dependencies
+RUN npm install
+
+COPY . .
+
+ENV PORT=3000
+
+EXPOSE 5173
+
+CMD ["npm", "run", "dev", "--host"]
